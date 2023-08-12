@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tailwindcss -i tailwindcss/input-tailwind.css -o ./css/output-tailwind.css"
+    "local": "vite",
+    "build": "tailwindcss -i tailwindcss-input/tailwind-input.css -o tailwindcss-output/tailwindcss-output.css --watch"
   },
   "keywords": [],
   "author": "",
