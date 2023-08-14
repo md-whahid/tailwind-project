@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="m-0 h-full w-full overflow-x-hidden p-0" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,16 +26,375 @@
     <link rel="stylesheet" href="./tailwindcss-input/tailwind-input.css" />
     <link rel="stylesheet" href="./tailwindcss-output/tailwindcss-output.css" />
     <!--todo:============================ FOR TailwindCSS SUPPORT============================= -->
+    <!--?======================================================================================-->
+    <!--todo:============================= FOR CSS File SUPPORT=============================== -->
+    <link rel="stylesheet" href="./all-css/landing-page.css" />
+    <!--todo:============================= FOR CSS File SUPPORT=============================== -->
     <title>Compassion Care</title>
   </head>
 
-  <body>
-    <div class="bg-green-700">hi there</div>
-    <div class="bg-green-700">hi there</div>
-    <div class="bg-green-700">hi there</div>
-    <div class="bg-green-700">hi there</div>
-    <div class="bg-green-700">hi there</div>
-    <div class="bg-green-700">hi there</div>
-    <i class="fa-solid fa-house-chimney text-red-600"></i>
+  <body class="m-0 h-full w-full overflow-x-hidden p-0">
+    <section class="hero-section w-screen h-[95vh]">
+      <header class="flex justify-between items-center w-[85%] mx-auto">
+        <a href="#">
+          <img
+            class="w-16 sm:w-24 md:w-36"
+            src="./all-images/landing-page/compassion-care-logo.svg"
+            alt="compassion-care-logo"
+          />
+        </a>
+        <nav
+          id="navbar"
+          class="duration-500 lg:static absolute bg-custom-blue min-h-[60vh] lg:min-h-fit left-0 -top-[100%] w-full bg-opacity-50 backdrop-blur-sm lg:w-[47rem] py-6 px-8 rounded-lg"
+        >
+          <div
+            class="flex pt-32 lg:pt-0 justify-between items-center flex-col lg:flex-row gap-8"
+          >
+            <a class="text-white text-lg font-Quicksand" href="#">Home</a>
+            <a class="text-white text-lg font-Quicksand" href="#">Service</a>
+            <a class="text-white text-lg font-Quicksand" href="#">About Us</a>
+            <a class="text-white text-lg font-Quicksand" href="#">Contact Us</a>
+            <button
+              class="hidden lg:block rounded-full bg-white px-8 py-2 text-custom-violet -mr-10"
+              type="button"
+            >
+              Email
+            </button>
+            <button
+              class="hidden lg:block rounded-full bg-custom-violet px-5 py-2 text-white"
+              type="button"
+            >
+              Call Now
+            </button>
+          </div>
+        </nav>
+        <nav class="flex justify-between items-center w-60 lg:hidden">
+          <button
+            class="rounded-full bg-white px-8 py-2 text-custom-violet"
+            type="button"
+          >
+            Email
+          </button>
+          <button
+            class="rounded-full bg-custom-violet px-5 py-2 text-white"
+            type="button"
+          >
+            Call Now
+          </button>
+          <ion-icon
+            class="text-white text-2xl cursor-pointer"
+            onclick="onToggleNavMenu(this)"
+            name="menu"
+            class=""
+          ></ion-icon>
+        </nav>
+      </header>
+      <div class="w-[90%] md:w-[48rem] mx-auto md:mx-8 mt-4 md:mt-36">
+        <h1
+          class="text-white bg-custom-blue text-4xl md:text-5xl md:pr-16 md:py-2 inline font-Gilroy-Black"
+        >
+          Your Well-being, Is Our Priority
+        </h1>
+        <p
+          class="text-white font-Quicksand font-light mt-2 text-base md:text-xl md:text-center md:mt-6 md:w-[32rem]"
+        >
+          The local care provider that works with you and puts
+          <br />
+          your need first.
+        </p>
+        <div
+          class="flex justify-start md:justify-center items-center mt-4 md:w-[32rem] md:mt-8"
+        >
+          <button
+            class="flex items-center justify-around rounded-full text-xs md:text-base bg-white font-Quicksand font-semibold text-custom-blue py-1 pl-1 md:pl-2 pr-4 md:py-2 md:pr-6"
+            type="button"
+          >
+            <img
+              class="mr-1 w-7 xs:mr-1 md:w-9 md:mr-2"
+              src="./all-images/landing-page/rocket-icon.svg"
+              alt=""
+            />GET IN TOUCH
+          </button>
+          <button
+            class="ml-4 rounded-full border-[1px] border-white text-xs md:text-base font-Quicksand text-white py-[0.6rem] px-6 md:px-10 md:py-3"
+            type="button"
+          >
+            OUR SERVICES
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--! ========================This DIV is for the Background Image of Why-choose-us Section=============== -->
+    <!--! ========================This DIV is for the Background Image of Why-choose-us Section=============== -->
+    <div class="-mb-[23%] hidden md:block">
+      <img
+        src="./all-images/landing-page/why-choose-us-bg-largre.svg"
+        alt=""
+        class="w-full"
+      />
+    </div>
+    <!--! ========================This DIV is for the Background Image of Why-choose-us Section=============== -->
+    <!--! ========================This DIV is for the Background Image of Why-choose-us Section=============== -->
+    <section>
+      <div class="mt-4">
+        <div
+          class="md:-mt-0 mx-auto mb-8 flex w-64 justify-around border-b-[1px] border-custom-black pb-2 font-Quicksand font-bold xs:w-80 sm:w-96 md:w-[28rem] md:text-lg"
+        >
+          <button
+            class="bg-custom-blue rounded-full text-white text-xs sm:text-base py-2 px-4 xs:py-3 xs:px-6 sm:px-8 md:px-10"
+          >
+            Why Choose US
+          </button>
+          <button
+            class="bg-custom-blue rounded-full text-white text-xs sm:text-base py-2 px-7 xs:py-3 xs:px-11 sm:px-11 md:px-16"
+          >
+            About US
+          </button>
+        </div>
+        <!--? ==============================This is for small screen view======================================= -->
+        <!--? ==============================This is for small screen view======================================= -->
+        <div class="w-[68%] mx-auto md:hidden">
+          <h1 class="font-Gilroy-Black text-custom-black text-3xl">
+            Why choose Us
+          </h1>
+          <p class="font-Quicksand font-medium text-xs mt-3">
+            Wiederholt steigt und auf vom aus, und schatten diesmal irrt versch
+            wenn wieder. Ich sie dun nen so und. Denen lebens die blick mir der
+            und froher in, träne macht sage nun ihr. Schwebet faßt bang sich.
+            Etwöes und vernd wenn wieder. lebens die blick mir der.
+          </p>
+        </div>
+        <div class="-mt-[20%] md:hidden">
+          <img
+            class="w-full"
+            src="./all-images/landing-page/why-choose-us-small-002.svg"
+            alt="why-choose-us"
+          />
+        </div>
+      </div>
+      <!--? ==============================This is for small screen view======================================= -->
+      <!--? ==============================This is for small screen view======================================= -->
+      <!--! ================================================================================================== -->
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <div
+        class="relative hidden md:block mx-auto h-96 w-[45rem] lg:mt-24 lg:scale-125 xl:mt-36 xl:scale-150"
+        style="
+          background-image: url(./all-images/landing-page/why-choose-us-large.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div
+          class="absolute text-custom-black"
+          style="
+            top: 75%;
+            left: 107%;
+            transform: translate(-75%, -107%);
+            width: 29rem;
+          "
+        >
+          <h1 class="font-GilroyBlack text-2xl">Why Choose Us</h1>
+          <p class="mt-8 font-Quicksand text-sm leading-7">
+            Est sed dolres sed ea lorem et at dolore.
+            <br />
+            Labore no accusam ipsum tamata diam
+            <br />
+            justo. Et labore et takimata et clita eiod.
+            <br />
+            kasd no takimata sed diam dolor, sancs
+            <br />
+            consetetur diam et lorem gubergren.
+            <br />
+            at voluptua at. Lorem consetetur.
+          </p>
+        </div>
+      </div>
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <!--? ==============================This is for BIG screen view========================================= -->
+    </section>
+    <!--! ========================This DIV is for the Background Image of OUR-SERVICES Section=============== -->
+    <!--! ========================This DIV is for the Background Image of OUR-SERVICES Section=============== -->
+    <div class="hidden md:block -mb-[39%] -mt-16">
+      <img
+        src="./all-images/landing-page/why-choose-us-lower.svg"
+        alt=""
+        class="w-full"
+      />
+    </div>
+    <!--! ========================This DIV is for the Background Image of OUR-SERVICES Section=============== -->
+    <!--! ========================This DIV is for the Background Image of OUR-SERVICES Section=============== -->
+    <section>
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <div
+        class="mx-auto flex justify-around font-Gilroy-Black text-2xl font-black text-custom-black sm:text-3xl md:text-4xl"
+      >
+        Our Service
+      </div>
+      <div
+        class="hidden md:block our-services font-Gilroy-Black font-black text-custom-black"
+      >
+        <div class="service-container">
+          <div class="tamplet grid-personal-care">
+            <img
+              src="./all-images/landing-page/service-personal-care.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p>Personal Care</p>
+          </div>
+          <div class="tamplet grid-personal-care-arrow">
+            <img
+              src="./all-images/landing-page/service-personal-care-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div class="tamplet grid-community-nursing-arrow">
+            <img
+              src="./all-images/landing-page/service-community-nursing-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div class="tamplet grid-community-nursing">
+            <img
+              src="./all-images/landing-page/service-community-nursing.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p>Community Nursing</p>
+          </div>
+          <div class="tamplet grid-household-tasks">
+            <img
+              src="./all-images/landing-page/service-housesold-tasks.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p class="text-white">Household Tasks</p>
+          </div>
+          <div class="tamplet grid-household-tasks-arrow">
+            <img
+              src="./all-images/landing-page/service-housesold-tasks-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div
+            class="tamplet-center grid-cernter font-Gilroy-Medium font-medium"
+          >
+            <img src="./all-images/landing-page/service-center.svg" alt="" />
+            <a href="#"
+              >Learn More
+              <ion-icon class="-mb-1" name="chevron-forward"></ion-icon
+            ></a>
+            <!--?--- DIV IMAGE ----->
+          </div>
+          <div class="tamplet grid-social-community-arrow">
+            <img
+              src="./all-images/landing-page/service-social-community-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div class="tamplet grid-social-community">
+            <img
+              src="./all-images/landing-page/service-social-community.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p>
+              Social & Community <br />
+              Participation
+            </p>
+          </div>
+          <div class="tamplet grid-supported-independent-arrow">
+            <img
+              src="./all-images/landing-page/service-support-independent-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div class="tamplet grid-transport-assistance-arrow">
+            <img
+              src="./all-images/landing-page/service-transport-assistance-arrow.svg"
+              alt=""
+            />
+            <!--!--- DIV ARROW ----->
+          </div>
+          <div class="tamplet grid-supported-independent">
+            <img
+              src="./all-images/landing-page/service-support-independent.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p>
+              Supported Independentb <br />
+              Living
+            </p>
+          </div>
+          <div class="tamplet grid-transport-assistance">
+            <img
+              src="./all-images/landing-page/service-transport-assistance.svg"
+              alt=""
+            />
+            <!--?--- DIV IMAGE ----->
+            <p>Transport Assistance</p>
+          </div>
+        </div>
+      </div>
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <!--? ==============================This is for BIG screen view========================================= -->
+      <!--! ================================================================================================== -->
+      <!--? ==============================This is for small screen view======================================= -->
+      <!--? ==============================This is for small screen view======================================= -->
+      <!--todo: start -->
+      <!--? ==============================This is for small screen view======================================= -->
+      <!--? ==============================This is for small screen view======================================= -->
+    </section>
+    <p class="font-Gilroy-Bold">
+      Rebum sea est vero eirmod duo dolor aliquyam. At dolor nonumy elitr clita
+      et elitr no vero lorem, et justo et sed lorem et, erat amet labore et eos
+      duo consetetur sanctus justo at. Erat ipsum dolores dolor sed sadipscing
+      lorem nonumy. Voluptua et kasd aliquyam erat lorem nonumy vero, lorem
+      ipsum diam amet dolores dolores consetetur duo eirmod tempor, stet accusam
+      dolores takimata et sit tempor justo nonumy dolore, vero ut invidunt
+      eirmod erat. Diam lorem lorem dolores sanctus, lorem est sed clita duo,
+      sit dolores est sit eirmod at. Ipsum diam sanctus labore eirmod. Ut elitr
+      est sed. Rebum sea est vero eirmod duo dolor aliquyam. At dolor nonumy
+      elitr clita et elitr no vero lorem, et justo et sed lorem et, erat amet
+      labore et eos duo consetetur sanctus justo at. Erat ipsum dolores dolor
+      sed sadipscing lorem nonumy. Voluptua et kasd aliquyam erat lorem nonumy
+      vero, lorem ipsum diam amet dolores dolores consetetur duo eirmod tempor,
+      stet accusam dolores takimata et sit tempor justo nonumy dolore, vero ut
+      invidunt eirmod erat. Diam lorem lorem dolores sanctus, lorem est sed
+      clita duo, sit dolores est sit eirmod at. Ipsum diam sanctus labore
+      eirmod. Ut elitr est sed. Rebum sea est vero eirmod duo dolor aliquyam. At
+      dolor nonumy elitr clita et elitr no vero lorem, et justo et sed lorem et,
+      erat amet labore et eos duo consetetur sanctus justo at. Erat ipsum
+      dolores dolor sed sadipscing lorem nonumy. Voluptua et kasd aliquyam erat
+      lorem nonumy vero, lorem ipsum diam amet dolores dolores consetetur duo
+      eirmod tempor, stet accusam dolores takimata et sit tempor justo nonumy
+      dolore, vero ut invidunt eirmod erat. Diam lorem lorem dolores sanctus,
+      lorem est sed clita duo, sit dolores est sit eirmod at. Ipsum diam sanctus
+      labore eirmod. Ut elitr est sed.
+    </p>
+    <script src="./main.js"></script>
+    <!--? ================================IONICONS SCRIPT CND IS HERE============================== -->
+    <!--? ================================IONICONS SCRIPT CND IS HERE============================== -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--? ================================IONICONS SCRIPT CND IS HERE============================== -->
+    <!--? ================================IONICONS SCRIPT CND IS HERE============================== -->
   </body>
 </html>
